@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="dlbsvg.css">
+    <script src="jquery.js"></script>
+    <script src="dlbSvg.js"></script>
+    <script>
+        $(function(){
+            var t = $.luopan({
+                id:'luopanSvg',
+                data:[
+                    {name:'建议中文', onClick:function(){},selected:true},
+                    {name:'建议中文', onClick:function(){}},
+                    {name:'建议中文', onClick:function(){}}
+                ]
+            });
+            //t.updataDom([{name:'建议中文', onClick:function(){}}])
+        });
+    </script>
+</head>
+<body>
+<div id="luopanBox" class="ui-draggable">
+    <div class="luopanBar">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="luopanSvg" width="192" height="192">
+            <image x="22" y="22" width="148" height="148" id="luopanSvgImg1" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="luopan_bg.png"></image>
+        </svg>
+    </div>
+</div>
+</body>
+</html>
