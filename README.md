@@ -7,4 +7,6 @@ $.luopan({data:[{name:'建议中文', link:'www.baidu.com', onClick:function(){}
 如果要更新数据：
 
 var t = $.luopan({data:[{name:'建议中文', link:'www.baidu.com', onClick:function(){}}],id:'luopanSvg'});
+
+
 t.updataDom([{name:'建议中文', onClick:function(){}}])
